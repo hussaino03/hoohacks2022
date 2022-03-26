@@ -8,7 +8,7 @@ const Home = () =>{
         <div className="card w-75 text-center">
           <a href="index.html"
             ><img
-              src="./images/plant1.jpg"
+              src={require("./images/plant1.jpg")}
               className="card-img-top"
               alt="Go to organizational feature, rabbit picture"
           /></a>
@@ -46,7 +46,7 @@ const Home = () =>{
         <div className="card w-75 text-center">
           <a href="#"
             ><img
-              src="./images/plant3.jpg"
+              src={require("./images/plant3.jpg")}
               className="card-img-top"
               alt="Go to blog feature, cat with hairnet image"
           /></a>
