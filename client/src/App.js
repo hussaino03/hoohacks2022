@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
-import Home from './components/Home';
+import Home from './components/Home'; // for adding the homepage (navbar)
 
 
 function App() {
