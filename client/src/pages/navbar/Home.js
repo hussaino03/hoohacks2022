@@ -27,7 +27,7 @@ const Home = () =>{
         <div className="card w-75 text-center">
           <a href="calendar.html"
             ><img
-              src="images/plant2.jpg"
+              src={require("./images/plant2.jpg")}
               className="card-img-top"
               alt="Go to calendar feature, cute dog"
           /></a>
