@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar"
-import Home from "./pages/navbar/Home"
-import Cats from "./pages/navbar/Cats"
-import Sheep from "./pages/navbar/Sheep"
-import Goat from "./pages/navbar/Goat"
-
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './pages/navbar/Home';
+import About from './pages/navbar/about';
+import Events from './pages/navbar/events';
+import AnnualReport from './pages/navbar/annual';
+  
 function App() {
   return (
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />}></Route> {/*This is going to be the homepage*/}
-        <Route path='/cats' element={<Cats />} /> {/*user page?*/}.
-        <Route path='/sheeps' element={<Sheep />} /> {/*picture page?*/}.
-        <Route path='/goats' element={<Goat />} /> {/**/}.
+        <Route path='/' element={<Home />}></Route> 
+        <Route path='/about' element={<About />} /> {/*user page?*/}
+        <Route path='/events' element={<Events />} /> {/*picture page?*/}
+        <Route path='/annual' element={<AnnualReport />} /> {/**/}
       </Routes>
     </Router>
   );
 }
-
+  
 export default App;
+

@@ -1,21 +1,40 @@
+
 import React from 'react';
-import { Link } from "react-router-dom";
-const navbar= () =>{
+import {
+  Nav,
+  NavLink,
+  Bars,
+  NavMenu,
+} from './NavbarElements';
+  
+const Navbar = () => {
   return (
-  <div>
-    <li>
-      <Link to="/">Dogs</Link>
-    </li>
-    <li>
-      <Link to="/cats">Cats</Link>
-    </li>
-    <li>
-      <Link to="/sheeps">Sheeps</Link>
-    </li>
-    <li>
-      <Link to="/goats">Goats</Link>
-    </li>
-  </div>
+    <>
+      <Nav>
+        <Bars />
+  
+        <NavMenu>
+          <NavLink to='/about' activeStyle>
+            About
+          </NavLink>
+          <NavLink to='/' activeStyle>
+            Home
+          </NavLink>
+          <NavLink to='/events' activeStyle>
+            Events
+          </NavLink>
+          <NavLink to='/annual' activeStyle>
+            Annual Report
+          </NavLink>
+          <NavLink to='/blogs' activeStyle>
+            Blogs
+          </NavLink>
+          {/* Second Nav */}
+          {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
+        </NavMenu>
+      </Nav>
+    </>
   );
-}
-export default navbar;
+};
+  
+export default Navbar;
