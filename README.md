@@ -172,7 +172,7 @@ Use this space to list resources you find helpful and would like to give credit 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/checks-status/BiaDd/hoohacks2022/main
+[contributors-shield]: https://img.shields.io/github/checks-status/BiaDd/hoohacks2022/main?color=%23&label=Contributors&style=for-the-badge
 [contributors-url]: https://github.com/BiaDd/hoohacks2022/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
 [forks-url]: https://github.com/BiaDd/hoohacks2022/network/members
