@@ -29,11 +29,11 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/BiaDd/hoohacks2022">
+    <img src="plant.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Greenery!</h3>
 
   <p align="center">
     An awesome README template to jumpstart your projects!
@@ -181,5 +181,5 @@ Use this space to list resources you find helpful and would like to give credit 
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
 [issues-url]: https://github.com/BiaDd/hoohacks2022/issues
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/BiaDd/hoohacks2022/LICENSE.txt
+[license-url]: https://github.com/BiaDd/hoohacks2022/blob/main/LICENSE.txt
 [product-screenshot]: images/screenshot.png
