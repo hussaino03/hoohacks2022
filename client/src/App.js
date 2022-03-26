@@ -13,10 +13,10 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path='/' exact component={Dogs} />
-        <Route path='/cats' component={Cats} />
-        <Route path='/sheeps' component={Sheeps} />
-        <Route path='/goats' component={Goats} />
+        <Route path='/' exact component={Dogs} /> {/*This is going to be the homepage*/}
+        <Route path='/cats' component={Cats} /> {/*user page?*/}.
+        <Route path='/sheeps' component={Sheeps} /> {/*picture page?*/}.
+        <Route path='/goats' component={Goats} /> {/**/}.
       </Routes>
     </Router>
   );
