@@ -181,5 +181,5 @@ Use this space to list resources you find helpful and would like to give credit 
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
 [issues-url]: https://github.com/BiaDd/hoohacks2022/issues
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/BiaDd/hoohacks2022/main/LICENSE.txt
+[license-url]: https://github.com/BiaDd/hoohacks2022/LICENSE.txt
 [product-screenshot]: images/screenshot.png
