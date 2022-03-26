@@ -1,9 +1,16 @@
 var express = require('express');
 var router = express.Router();
+const QueryPromise = require("../database/DBService");
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+  QueryPromise("SELECT * FROM Users")
+    .then((results) => {
+      res.send(results);
+    })
+    .catch((err) => {
+      res.send(err);
+    });
 });
 
 router.post('/login', function(req, res, next) {
