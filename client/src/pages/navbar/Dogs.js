@@ -2,10 +2,9 @@ import React from 'react';
 const Dogs = () =>{
   return (
     <div>
-      <h3>Dogs</h3>
+      <h3>Homepage</h3>
       <div>
-        <img src="./dog.png"/>
-        <img src="./dog.png"/>
+        <p>stuff</p>
       </div>
     </div>
   );

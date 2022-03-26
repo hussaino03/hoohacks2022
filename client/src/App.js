@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar"
 import Dogs from "./pages/navbar/Dogs"
 import Cats from "./pages/navbar/Cats"
-import Sheeps from "./pages/navbar/Sheep"
-import Goats from "./pages/navbar/Goat"
+import Sheep from "./pages/navbar/Sheep"
+import Goat from "./pages/navbar/Goat"
 
 
 function App() {
@@ -13,10 +13,10 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path='/' exact component={Dogs} /> {/*This is going to be the homepage*/}
-        <Route path='/cats' component={Cats} /> {/*user page?*/}.
-        <Route path='/sheeps' component={Sheeps} /> {/*picture page?*/}.
-        <Route path='/goats' component={Goats} /> {/**/}.
+        <Route path="/" element={<Dogs />}></Route> {/*This is going to be the homepage*/}
+        <Route path='/cats' element={<Cats />} /> {/*user page?*/}.
+        <Route path='/sheeps' element={<Sheep />} /> {/*picture page?*/}.
+        <Route path='/goats' element={<Goat />} /> {/**/}.
       </Routes>
     </Router>
   );
