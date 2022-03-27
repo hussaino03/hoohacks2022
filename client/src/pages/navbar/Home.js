@@ -70,7 +70,7 @@ const Home = () =>{
 
     <div className="container mt-4 fs-2 text-center py-3 rounded border bg-white">
       <h1 className="text-center fs-2">Greenery</h1>
-      <br/>
+      
       <a href="login" role="button" className="btn btn-dark" >
         Login
       </a>
