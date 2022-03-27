@@ -4,12 +4,18 @@ const QueryPromise = require("../database/DBService");
 
 const twilio = require('twilio');
 const client = new twilio(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN);
+var cloudinary = require('cloudinary');
+
+cloudinary.config({ 
+    cloud_name: 'dekqw8osx', 
+    api_key: '441489766212891', 
+    api_secret: 'QF6fCMKBBe4G-GZwqziSAD6Ino4' 
+  });
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
-
 router.post('/', function(req, res, next) {
 
   client.messages
@@ -33,5 +39,15 @@ router.post('/', function(req, res, next) {
       res.send(err);
     });
 });
+
+router.post('/addimage', function(req, res, next) {
+  console.log('hi!!!');
+  console.log(req.body);
+  
+
+  // cloudinary.v2.uploader.upload("https://upload.wikimedia.org/wikipedia/commons/a/ae/Olympic_flag.jpg",
+  //   function(error, result) {console.log(result); console.log(error)});
+});
+
 
 module.exports = router;

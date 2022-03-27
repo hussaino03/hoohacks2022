@@ -34,7 +34,7 @@
   <h3 align="center">Greenery!</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    A plant caretaking app that Gamify and Simplifies!
     <br />
     <a href="https://github.com/BiaDd/hoohacks2022"><strong>Explore the docs »</strong></a>
     <br />
@@ -101,30 +101,9 @@ Use the `BLANK_README.md` to get started.
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+* React.js
+* Express.js
 
-
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -133,10 +112,10 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Add Changelog
-- [ ] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
+- [X] Add Sign up
+- [X] Add Login
+- [X] Add Calendar
+- [ ] Add Social Aspect
 
 
 
@@ -176,4 +155,4 @@ Use this space to list resources you find helpful and would like to give credit 
 [issues-url]: https://github.com/BiaDd/hoohacks2022/issues
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
 [license-url]: https://github.com/BiaDd/hoohacks2022/blob/main/LICENSE.txt
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: loginpage.png
