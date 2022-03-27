@@ -9,7 +9,6 @@ import Home from './pages/navbar/Home';
 import Plants from './pages/navbar/Plants';
 import Events from './pages/navbar/events';
 
-
 function App() {
   return (
     <Router>
@@ -24,6 +23,6 @@ function App() {
     </Router>
   );
 }
-  
+
 export default App;
 
