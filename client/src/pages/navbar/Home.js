@@ -70,15 +70,16 @@ const Home = () =>{
 
     <div className="container mt-4 fs-2 text-center py-3 rounded border bg-white">
       <h1 className="text-center fs-2">Greenery</h1>
-      
+
       <a href="/login" role="button" className="btn btn-dark" >
+
         Login
       </a>
     </div>
 
     <div className="row">
       <div className="col-12 bg-white mt-4">
-        <footer
+      <footer
           className="d-flex flex-wrap justify-content-between align-items-center p-3 my-4 mx-4 border-top border-bottom"
         >
           <p className="col-md-4 mb-0 text-muted">&copy; 2022 Hoohacks 2022</p>
@@ -95,8 +96,16 @@ const Home = () =>{
               </a>
             </li>
             <li className="nav-item">
+              <a href="/events" className="nav-link px-2 text-muted">Events</a>
+            </li>
+            <li className="nav-item">
+              <a href="/Signup" className="nav-link px-2 text-muted">Sign Up</a>
+            </li>
+
+            <li className="nav-item">
               <a href="/login" className="nav-link px-2 text-muted">Login</a>
             </li>
+
           </ul>
         </footer>
       </div>
