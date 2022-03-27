@@ -24,7 +24,7 @@ const AddPlant = () => {
     const [plantName, setPlantName] = useState("");
     const nav = useNavigate();
     useEffect(() => {
-        fetch("http://localhost:4000/plants").then(
+        fetch("http://localhost:4000/plants/all").then(
             result => { return result.json() }
         ).then(plants => setPlants(plants));
     }, []);
@@ -81,4 +81,4 @@ const AddPlant = () => {
     );
 }
 
-export default AddPlant;
+export {AddPlant, getCookie};

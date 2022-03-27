@@ -8,7 +8,7 @@ import Signup from './pages/navbar/Signup';
 import Home from './pages/navbar/Home';
 import Plants from './pages/navbar/Plants';
 import Events from './pages/navbar/events';
-import AddPlant from './pages/navbar/AddPlant';
+import {AddPlant} from './pages/navbar/AddPlant';
 
 function App() {
   return (
