@@ -1,5 +1,6 @@
 import React,  { useState }  from 'react';
 import { useNavigate } from "react-router-dom";
+import './about.css';
 
 
 const Login = () =>  {
@@ -54,7 +55,14 @@ const Login = () =>  {
     };
 
     return (
-      <div class="row justify-content-center">
+        <div>
+              <header className='masthead'>
+    <h1 className='masthead-heading'>GrowWithMe</h1>
+  </header>
+  <div class="row py-5 d-flex align-items-center justify-content-center">
+          <h1 class="text-center fs-2">Welcome Back!</h1>
+          </div>
+        <div class="row justify-content-center">
         <div class="col-4">
           <form onSubmit={handleLogin}>
             <div class="mb-3">
@@ -92,7 +100,8 @@ const Login = () =>  {
             </div>
           </form>
         </div>
-      </div>
+    </div>
+    </div>
     );
 }
 

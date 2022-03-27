@@ -98,7 +98,7 @@ const Home = () =>{
               <a href="/login" className="nav-link px-2 text-muted">Login</a>
             </li>
             <li className="nav-item">
-              <a href="#" className="nav-link px-2 text-muted">Logout</a>
+              <a href="/" className="nav-link px-2 text-muted">Logout</a>
             </li>
           </ul>
         </footer>
