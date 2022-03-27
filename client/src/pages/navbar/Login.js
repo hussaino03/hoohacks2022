@@ -1,4 +1,5 @@
 import React,  { useState }  from 'react';
+import { useNavigate } from "react-router-dom";
 import './about.css';
 
 
@@ -6,18 +7,52 @@ const Login = () =>  {
 
     const [errorMessages, setErrorMessages] = useState({});
     const [isSubmitted, setIsSubmitted] = useState(false);
+    const [username, setUsername] = useState("");
+    const [pass, setPass] = useState("");
+    const nav = useNavigate();
 
 
     const renderErrorMessage = (name) =>
     name === errorMessages.name && (
       <div className="error">{errorMessages.message}</div>
     );
-    
-    
-    const handleSubmit = (event) => {
-        // Prevent page reload
-        event.preventDefault();
-      };
+
+
+    const handleLogin = (e) => {
+      e.preventDefault();
+      fetch("http://localhost:4000/users/login", {
+        method: "POST",
+        headers: {
+          "Content-type": "application/json",
+        },
+        body: JSON.stringify({
+          username: username,
+          password: pass,
+        }),
+      })
+        .then((res) => {
+          res
+            .json()
+            .then((results) => {
+              if (results["msg"] == "success") {
+                // SUCCESSFUL LOGIN
+                console.log(results);
+                document.cookie =
+                  "userID=" + results["data"]["userID"] + "; path=/;";
+                nav("/");
+              } else {
+                // USERNAME OR PASSWORD INCORRECT
+                console.log(results["msg"]);
+              }
+            })
+            .catch((err) => {
+              console.log(err);
+            });
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    };
 
     return (
         <div>
@@ -29,19 +64,41 @@ const Login = () =>  {
           </div>
         <div class="row justify-content-center">
         <div class="col-4">
-        <form action="#" method="post">
+          <form onSubmit={handleLogin}>
             <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" name="email" required/>
+              <label for="username" class="form-label">
+                Username
+              </label>
+              <input
+                type="username"
+                class="form-control"
+                id="username"
+                name="username"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+                required
+              />
             </div>
             <div class="mb-3">
-                <label for="password" class="form-label">Password</label>
-                <input type="password" class="form-control" id="password" name="password"/>
+              <label for="password" class="form-label">
+                Password
+              </label>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                name="password"
+                value={pass}
+                onChange={(e) => setPass(e.target.value)}
+                required
+              />
             </div>
             <div class="text-center">
-            <button type="submit" class="btn btn-primary">Login</button>
+              <button type="submit" class="btn btn-primary">
+                Login
+              </button>
             </div>
-        </form>
+          </form>
         </div>
     </div>
     </div>

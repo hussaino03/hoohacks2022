@@ -9,13 +9,12 @@ import Home from './pages/navbar/Home';
 import About from './pages/navbar/about';
 import Events from './pages/navbar/events';
 
-
 function App() {
   return (
     <Router>
       <Navbar />
       <Routes>
-        <Route path='/' element={<Home />}></Route> 
+        <Route path='/' element={<Home />}></Route>
         <Route path='/about' element={<About />} /> {/*user page?*/}
         <Route path='/events' element={<Events />} /> {/*picture page?*/}
         <Route path='/login' element={<Login />} /> {/**/}
@@ -24,6 +23,6 @@ function App() {
     </Router>
   );
 }
-  
+
 export default App;
 
