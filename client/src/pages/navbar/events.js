@@ -2,60 +2,61 @@ import React from 'react';
   
 const Events = () => {
   return (
-    <div class="row justify-content-center">
-    <div class="col-auto">
-  <div className="table table-bordered table-responsive">
-    <h3 className="text-center">
-      Your Plants
-    </h3>
-    <thead>
-      <tr>
-        <th>Plants</th>
-        <th>Monday</th>
-        <th>Tuesday</th>
-        <th>Wednesday</th>
-        <th>Thursday</th>
-        <th>Friday</th>
-        <th>Saturday</th>
-        <th>Sunday</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Succulant</td>
-        <td>Water Plant</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>Move outside</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Cactus</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>Water</td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Tomatoes</td>
-        <td>Water</td>
-        <td></td>
-        <td>Fertilize</td>
-        <td></td>
-        <td></td>
-        <td>Water</td>
-        <td></td>
-      </tr>
-    </tbody>
 
-  </div>
-  </div>
-  </div>
+    <div id="outer-wrapper" className="p-5 m-5 rounded bg-white rounded">
+            <div className="container-fluid py-2">
+                <div className="row">
+                    <div className="col-12">
+                        <h1 className="fs-2 text-center p-4 rounded border">&lt;Username&gt;'s Calendar</h1>
+                    </div>
+                </div>
+                <div className="row mt-3">
+
+                    <div className="col-12 col-md-12 col-lg-4 align-items-center">
+                       
+                        <button type="button" className="btn btn-outline-primary my-2">Add New</button>
+                        <div className="card mt-3">
+                            <ul className="list-group list-group-flush">
+                              
+                                <li className="upcoming-header list-group-item text-center py-2"><strong>Upcoming</strong></li>
+
+                                <li className="list-group-item">Water Succulents<span className="badge bg-primary">Mar 1</span></li>
+
+                                <li className="list-group-item">Plant Tomatoes<span className="badge bg-primary">Apr 12</span></li>
+
+                            </ul>
+                          </div>
+                    </div>
+                
+                    <div className="col-12 col-md-12 col-lg-8"> 
+                        <div id="cal-app-wrapper" className="rounded p-5 mt-3 border"> 
+                            <div id="outer-calendar" className="bg-white p-3 col-12 border border-primary rounded">
+                                <div id="month" className="border">
+                                    <i className="bi bi-arrow-left-circle back fs-2 px-4"></i> 
+                                    <div id="date">
+                                        <h1 className="fs-3 text-center"></h1> 
+                                        <p className="fs-4 text-center"></p> 
+                                        <p id="only-year" className="text-center"></p>  
+                                    </div>
+                                    <i className="bi bi-arrow-right-circle next fs-2 px-4"></i>
+                                </div>
+                                <div id="days" className="fs-3 text-center mt-3">
+                                    <p>Sun</p>
+                                    <p>Mon</p>
+                                    <p>Tue</p>
+                                    <p>Wed</p>
+                                    <p>Thu</p>
+                                    <p>Fri</p>
+                                    <p>Sat</p>
+                                </div>
+                                <div className="monthdaynums fs-4 mb-3"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
   );
 };
   
