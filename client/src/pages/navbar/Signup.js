@@ -99,7 +99,7 @@ const Login = () =>  {
     };
 
     return (
-      <div class="row py-5 d-flex align-items-center justify-content-center">
+      <div class="align-items-center justify-content-center">
         <header className='masthead'>
           <h1 className='masthead-heading'>GrowWithMe</h1>
         </header>

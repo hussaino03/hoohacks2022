@@ -8,6 +8,7 @@ import Signup from './pages/navbar/Signup';
 import Home from './pages/navbar/Home';
 import Plants from './pages/navbar/Plants';
 import Events from './pages/navbar/events';
+import Image from './pages/navbar/Image';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/' element={<Home />}></Route> 
         <Route path='/plants' element={<Plants />} /> {/*user page?*/}
         <Route path='/events' element={<Events />} /> {/*picture page?*/}
+        <Route path='/images' element={<Image />} /> {/*user page?*/}
         <Route path='/login' element={<Login />} /> {/**/}
         <Route path='/signup' element={<Signup />} /> {/**/}
       </Routes>
