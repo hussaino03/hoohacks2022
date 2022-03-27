@@ -1,5 +1,5 @@
 import React,  { useState }  from 'react';
-
+import './about.css';
 
 
 const Login = () =>  {
@@ -20,6 +20,13 @@ const Login = () =>  {
       };
 
     return (
+        <div>
+              <header className='masthead'>
+    <h1 className='masthead-heading'>GrowWithMe</h1>
+  </header>
+  <div class="row py-5 d-flex align-items-center justify-content-center">
+          <h1 class="text-center fs-2">Welcome Back!</h1>
+          </div>
         <div class="row justify-content-center">
         <div class="col-4">
         <form action="#" method="post">
@@ -36,6 +43,7 @@ const Login = () =>  {
             </div>
         </form>
         </div>
+    </div>
     </div>
     );
 }

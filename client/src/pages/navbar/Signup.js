@@ -1,3 +1,4 @@
+import './about.css';
 import React,  { useState }  from 'react';
 
 
@@ -20,7 +21,10 @@ const Login = () =>  {
       };
 
     return (
-        
+        <div>
+            <header className='masthead'>
+    <h1 className='masthead-heading'>GrowWithMe</h1>
+  </header>
         <div class="row py-5 d-flex align-items-center justify-content-center">
           <h1 class="text-center fs-2">Sign up for GrowWithMe</h1>
   
@@ -63,8 +67,8 @@ const Login = () =>  {
               </div>
   
               <p class="text-center text-muted mt-5 mb-3">
-                Already have an account?
-                <a href="login.html" class="fw-bold text-body"><u>Login here.</u></a>
+                Already have an account? 
+                <a href="./Login" class="fw-bold text-body"><u>  Login here.</u></a>
               </p>
   
    
@@ -76,7 +80,7 @@ const Login = () =>  {
             </form>
           </div>
         </div>
- 
+ </div>
     );
 }
 
