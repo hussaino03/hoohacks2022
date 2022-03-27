@@ -1,8 +1,8 @@
 import React from 'react';
+import './about.css';
   
 const Events = () => {
   return (
-
     <div id="outer-wrapper" className="p-5 m-5 rounded bg-white rounded">
             <div className="container-fluid py-2">
                 <div className="row">
@@ -57,6 +57,7 @@ const Events = () => {
                 </div>
             </div>
         </div>
+
   );
 };
   
