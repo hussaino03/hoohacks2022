@@ -32,4 +32,23 @@ router.post('/login', function(req, res, next) {
     });
 });
 
+router.post("/signup", function (req, res, next) {
+  let pass = crypto
+    .createHash("sha256")
+    .update(req.body.password)
+    .digest("hex");
+  QueryPromise(
+    "INSERT INTO Users VALUES (NULL, ?, ?, ?, NULL, NULL)",
+    [req.body.username, pass, req.body.email]
+  )
+    .then((results) => {
+      res.send({
+        msg: "success",
+      });
+    })
+    .catch((err) => {
+      res.send(err);
+    });
+});
+
 module.exports = router;

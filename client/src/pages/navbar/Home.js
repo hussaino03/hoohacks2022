@@ -87,7 +87,7 @@ const Home = () =>{
 
           <ul className="nav col-md-4 justify-content-end" id="fadeshow">
             <li className="nav-item">
-              <a href="#" className="nav-link px-2 active">Home</a>
+              <a href="/" className="nav-link px-2 active">Home</a>
             </li>
             <li className="nav-item">
               <a href="#" className="nav-link px-2 text-muted">
@@ -95,7 +95,7 @@ const Home = () =>{
               </a>
             </li>
             <li className="nav-item">
-              <a href="#" className="nav-link px-2 text-muted">Login</a>
+              <a href="/login" className="nav-link px-2 text-muted">Login</a>
             </li>
             <li className="nav-item">
               <a href="#" className="nav-link px-2 text-muted">Logout</a>
