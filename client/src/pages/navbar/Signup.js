@@ -198,7 +198,7 @@ const Login = () =>  {
               <a href="/events" className="nav-link px-2 text-muted">Events</a>
             </li>
             <li className="nav-item">
-              <a href="/Signup" className="nav-link px-2 active">SignUp</a>
+              <a href="/Signup" className="nav-link px-2 active">Sign Up</a>
             </li>
             <li className="nav-item">
               <a href="/login" className="nav-link px-2 text-muted">Login</a>
