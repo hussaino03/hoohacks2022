@@ -70,8 +70,9 @@ const Home = () =>{
 
     <div className="container mt-4 fs-2 text-center py-3 rounded border bg-white">
       <h1 className="text-center fs-2">Greenery</h1>
-      
-      <a href="login" role="button" className="btn btn-dark" >
+
+      <a href="/login" role="button" className="btn btn-dark" >
+
         Login
       </a>
     </div>
@@ -100,9 +101,11 @@ const Home = () =>{
             <li className="nav-item">
               <a href="/Signup" className="nav-link px-2 text-muted">Sign Up</a>
             </li>
+
             <li className="nav-item">
               <a href="/login" className="nav-link px-2 text-muted">Login</a>
             </li>
+
           </ul>
         </footer>
       </div>
