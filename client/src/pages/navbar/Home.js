@@ -1,9 +1,14 @@
 
 import React from 'react';
+import './about.css';
+import './home.css';
+
 const Home = () =>{
   return (
     <div>
-
+    <header className='masthead'>
+    <h1 className='masthead-heading'>GrowWithMe</h1>
+  </header>
     <div className="row row-cols-1 row-cols-md-3 g-4 mt-3">
       <div className="col d-flex justify-content-center">
         <div className="card w-75 text-center">
