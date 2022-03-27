@@ -1,5 +1,9 @@
 var express = require('express');
 var router = express.Router();
+const QueryPromise = require("../database/DBService");
+
+const twilio = require('twilio');
+const client = new twilio(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN);
 var cloudinary = require('cloudinary');
 
 cloudinary.config({ 
@@ -12,7 +16,29 @@ cloudinary.config({
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
+router.post('/', function(req, res, next) {
 
+  client.messages
+  .create({
+    body: 'I really hope this works lol',
+    to: '5715240406', // Text this number
+    from: '+17626759554', // From a valid Twilio number
+  })
+  .then((message) => console.log(message.sid))
+  .catch((err) => console.log(err));
+
+  QueryPromise("SELECT * FROM Users")
+    .then((results) => {
+      if (results[0]) {res.send({
+        msg: "success",
+        data: results[0],
+      });}
+      else {res.send({"msg": "Incorrect username or password"})}
+    })
+    .catch((err) => {
+      res.send(err);
+    });
+});
 
 router.post('/addimage', function(req, res, next) {
   console.log('hi!!!');

@@ -4,12 +4,41 @@ import './about.css';
 import './home.css';
 
 const Home = () =>{
+
+  const handleSms = e => {
+    e.preventDefault();
+    fetch("http://localhost:4000/", {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify({}),
+    })
+      .then((res) => {
+        res
+          .json()
+          .then((results) => {
+            if (results["msg"] == "success") {
+              console.log(results);
+            } else {
+              console.log(results);
+            }
+          })
+          .catch((err) => {
+            console.log(err);
+          });
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }
+
   return (
     <div>
     <header className='masthead'>
     <h1 className='masthead-heading'>GrowWithMe</h1>
   </header>
-    <div className="row row-cols-1 row-cols-md-3 g-4 mt-3">
+    <div /*onLoad={handleSmslolno}*/ className="row row-cols-1 row-cols-md-3 g-4 mt-3">
       <div className="col d-flex justify-content-center">
         <div className="card w-75 text-center">
           <a href="/"><img
