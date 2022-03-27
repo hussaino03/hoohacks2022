@@ -101,7 +101,17 @@ const Login = () =>  {
           </form>
         </div>
     </div>
-    <footer
+    <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <footer
           className="d-flex flex-wrap justify-content-between align-items-center p-3 my-4 mx-4 border-top border-bottom"
         >
           <p className="col-md-4 mb-0 text-muted">&copy; 2022 Hoohacks 2022</p>
@@ -110,18 +120,21 @@ const Login = () =>  {
 
           <ul className="nav col-md-4 justify-content-end" id="fadeshow">
             <li className="nav-item">
-              <a href="/" className="nav-link px-2 active">Home</a>
+              <a href="/" className="nav-link px-2 text-muted">Home</a>
             </li>
             <li className="nav-item">
-              <a href="#" className="nav-link px-2 text-muted">
-                Calendar
+              <a href="/plants" className="nav-link px-2 text-muted">
+                User
               </a>
             </li>
             <li className="nav-item">
-              <a href="/login" className="nav-link px-2 text-muted">Login</a>
+              <a href="/events" className="nav-link px-2 text-muted">Events</a>
             </li>
             <li className="nav-item">
-              <a href="/" className="nav-link px-2 text-muted">Logout</a>
+              <a href="/Signup" className="nav-link px-2 text-muted">SignUp</a>
+            </li>
+            <li className="nav-item">
+              <a href="/login" className="nav-link px-2 active">Login</a>
             </li>
           </ul>
         </footer>

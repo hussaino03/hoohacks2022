@@ -187,18 +187,21 @@ const Login = () =>  {
 
           <ul className="nav col-md-4 justify-content-end" id="fadeshow">
             <li className="nav-item">
-              <a href="/" className="nav-link px-2 active">Home</a>
+              <a href="/" className="nav-link px-2 text-muted">Home</a>
             </li>
             <li className="nav-item">
-              <a href="#" className="nav-link px-2 text-muted">
-                Calendar
+              <a href="/plants" className="nav-link px-2 text-muted">
+                User
               </a>
             </li>
             <li className="nav-item">
-              <a href="/login" className="nav-link px-2 text-muted">Login</a>
+              <a href="/events" className="nav-link px-2 text-muted">Events</a>
             </li>
             <li className="nav-item">
-              <a href="/" className="nav-link px-2 text-muted">Logout</a>
+              <a href="/Signup" className="nav-link px-2 active">SignUp</a>
+            </li>
+            <li className="nav-item">
+              <a href="/login" className="nav-link px-2 text-muted">Login</a>
             </li>
           </ul>
         </footer>
