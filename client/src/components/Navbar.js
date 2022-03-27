@@ -10,15 +10,15 @@ import {
 const Navbar = () => {
   return (
     <>
-      <Nav>
+      <Nav style={{ backgroundColor: '#9ce36f' }}>
         <Bars />
   
-        <NavMenu>
-          <NavLink to='/about' activeStyle>
-            About
-          </NavLink>
-          <NavLink to='/' activeStyle>
+        <NavMenu >
+          <NavLink to='/' activeStyle >
             Home
+          </NavLink>
+          <NavLink to='/plants' activeStyle>
+            User
           </NavLink>
           <NavLink to='/events' activeStyle>
             Events
