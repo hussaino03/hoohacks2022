@@ -44,7 +44,40 @@ const Login = () =>  {
                 if (results["msg"] == "success") {
                   // SUCCESSFUL REGISTER
                   console.log(results);
-                  nav("/login");
+                  fetch("http://localhost:4000/users/login", {
+                    method: "POST",
+                    headers: {
+                      "Content-type": "application/json",
+                    },
+                    body: JSON.stringify({
+                      username: username,
+                      password: pass,
+                    }),
+                  })
+                    .then((res) => {
+                      res
+                        .json()
+                        .then((results) => {
+                          if (results["msg"] == "success") {
+                            // SUCCESSFUL LOGIN
+                            console.log(results);
+                            document.cookie =
+                              "userID=" +
+                              results["data"]["userID"] +
+                              "; path=/;";
+                            nav("/");
+                          } else {
+                            // USERNAME OR PASSWORD INCORRECT
+                            console.log(results["msg"]);
+                          }
+                        })
+                        .catch((err) => {
+                          console.log(err);
+                        });
+                    })
+                    .catch((err) => {
+                      console.log(err);
+                    });
                 } else {
                   // SOMETHING HAPPENED
                   console.log(results);
