@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Login from './pages/navbar/Login';
+import Signup from './pages/navbar/Signup';
+import Home from './pages/navbar/Home';
+import About from './pages/navbar/about';
+import Events from './pages/navbar/events';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HooHacks 2022
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Home />}></Route>
+        <Route path='/about' element={<About />} /> {/*user page?*/}
+        <Route path='/events' element={<Events />} /> {/*picture page?*/}
+        <Route path='/login' element={<Login />} /> {/**/}
+        <Route path='/signup' element={<Signup />} /> {/**/}
+      </Routes>
+    </Router>
   );
 }
 
 export default App;
+
