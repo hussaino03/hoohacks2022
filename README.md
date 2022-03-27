@@ -28,7 +28,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/BiaDd/hoohacks2022">
-    <img src="plant.png" alt="Logo" width="80" height="80">
+    <img src="./client/src/pages/navbar/images/plant.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Greenery!</h3>
