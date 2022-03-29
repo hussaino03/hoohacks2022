@@ -11,7 +11,7 @@ const Events = () => {
     <div className="container-fluid py-2">
         <div className="row">
             <div className="col-12">
-                <h1 className="fs-2 text-center p-4 rounded border">&lt;Username&gt;'s Calendar</h1>
+                <h1 className="fs-2 text-center p-4 rounded border">&lt;USER&gt;'s Calendar</h1>
             </div>
         </div>
         <div className="row mt-3">
