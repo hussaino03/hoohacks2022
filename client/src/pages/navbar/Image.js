@@ -34,7 +34,10 @@ const Image = () => {
 
 
     return (
-
+        <div>
+        <header className='masthead'>
+        <h1 className='masthead-heading'>GrowWithMe</h1>
+      </header>
 
 
         <div className="py-5 d-flex align-items-center justify-content-center">
@@ -43,10 +46,12 @@ const Image = () => {
             <form method="post">
                 <input type="file" id="pic"/>
             </form>
+            <br></br>
             <button type="submit" class="btn btn-primary btn-block" onClick={handlePic}>
                 <span>Upload Picture</span>
             </button>
             </div>
+        </div>
         </div>
 
 
