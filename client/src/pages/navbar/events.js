@@ -24,9 +24,9 @@ const Events = () => {
                       
                         <li className="upcoming-header list-group-item text-center py-2"><strong>Upcoming</strong></li>
 
-                        <li className="list-group-item">Water Succulents<span className="badge bg-primary">Mar 1</span></li>
+                        <li className="list-group-item">Water Succulents&nbsp;&nbsp;<span className="badge bg-primary">Mar 1</span></li>
 
-                        <li className="list-group-item">Plant Tomatoes<span className="badge bg-primary">Apr 12</span></li>
+                        <li className="list-group-item">Plant Tomatoes&nbsp;&nbsp;<span className="badge bg-primary">Apr 12</span></li>
 
                     </ul>
                   </div>
