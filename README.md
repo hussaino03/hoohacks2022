@@ -78,31 +78,56 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+# About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+![homepage](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/884/596/datas/original.png)
 
-Hello! Welcome to Green with Me!
+
+## Inspiration
+
+We wanted to make a project that would allow the user to make an impact while also competing with others and having fun. It is eminently easy to keep forgetting to water the plants and not having the data for it in front of you, so we built a web app that provides reminders to the user so the user does not forget to water their plants, and also provides them with their plant's data. There is also a point system to make it more fun, and users can earn points by watering their plants!
+
+## What it does
+
+The user can log in and add plants to keep track of. Reminders are sent to the user using Twilio which allows the user to water their plants daily, and also the data for their plants are collected from an API that presents the user with all of the information! There is also a user's homepage where a chart is displayed for the user's plants, and the tasks required for them to do on a daily/weekly basis.
+
+## How we built it
+
+The project uses a frontend React UI connected to an Express.js backend with a SQL database. The login system uses SHA256 encryption to avoid plaintext passwords stored in the database. We also used the Twilio API to send push notifications to users as reminders to water their plants. Image hosting was also included using Cloudinary so users can submit pictures of their plant to the website. Styling on the frontend was accomplished primarily with Bootstrap.
+
+## Challenges we ran into
+
+Half of our team are first-time hackathon participants, so the rush of completing features and using GitHub at a fast pace was difficult to get accustomed to. But having a few veterans on our team helped us organize and develop our project given the time constraint.
+
+## Accomplishments that we're proud of
+
+We are proud to create a web app that works towards a good cause, as it allows the user to effectively take care of their plants, and present them with their data. We are also proud of building a system where the user is able to receive daily reminders to water their plants.
+
+## What we learned
+
+We further strengthened our skills in the technologies we used such as express.js and Twilio. Some of the team members did not have much experience with these technologies, so building a project using these technologies really helped them learn it.
+
+## What's next for GrowWithMe
+
+We hope to add more features such as a leveling up system which allows the user to level up as they gain XP points! Also, it would be cool to implement a hardware component where there could be smart planter that transmits soil/plant health information to the application.
 
 Features:
 * Plant caretaking system :smile:
 * Twillio - notification system
 * Point System
-* Plant advice
-
-
-This project focuses on the Gamification of taking care of your plants. We wanted to come up with a fun and interactive way for users to take good care of plants, and possibly interact with other users as well.
-
-Use the `BLANK_README.md` to get started.
+* Social Aspect 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 ### Built With
 
 * React.js
 * Express.js
+* Node.js
+* HTML/CSS (Bootstrap)
+* JavaScript
+* MySQL
+* Twilio 
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
