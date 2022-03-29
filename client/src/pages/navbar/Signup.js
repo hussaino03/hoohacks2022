@@ -167,7 +167,7 @@ const Login = () =>  {
             <div id="error"></div>
 
             <p class="text-center text-muted mt-5 mb-3">
-              Already have an account?
+              Already have an account?&nbsp;
               <a href="/login" class="fw-bold text-body">
                 <u>Login here.</u>
               </a>
