@@ -22,11 +22,15 @@ const Plants = () => {
       });
   }, []);
 
-
   return (
     <div>
-
-      <h3 className="text-center">Hello {(plants[0] ? `User ${plants[0]['userID']}` : 'USER')}! Lets grow some plants!</h3>
+         <header className='masthead'>
+    <h1 className='masthead-heading'>GrowWithMe</h1>
+  </header>
+  <div id="outer-wrapper" className="p-5 m-5 rounded bg-white rounded">
+      <div className="col-12">
+        <h3 className = "fs-2 text-center p-4 rounded border">Hello {(plants[0] ? `User ${plants[0]['userID']}` : '<USER>')}! Lets grow some plants!</h3>
+        <button type="button" className="btn btn-outline-primary my-2">Add New</button>
       <div className="col d-flex justify-content-center flex-wrap gap-3">
         {plants.map((plant) => {
           return (
@@ -51,6 +55,15 @@ const Plants = () => {
         })}
 
       </div>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+
       <footer
           className="d-flex flex-wrap justify-content-between align-items-center p-3 my-4 mx-4 border-top border-bottom"
         >
@@ -78,6 +91,8 @@ const Plants = () => {
             </li>
           </ul>
         </footer>
+    </div>
+    </div>
     </div>
   );
 };
