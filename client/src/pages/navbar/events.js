@@ -3,6 +3,10 @@ import './about.css';
   
 const Events = () => {
   return (
+    <div>
+    <header className='masthead'>
+    <h1 className='masthead-heading'>GrowWithMe</h1>
+  </header>
     <div id="outer-wrapper" className="p-5 m-5 rounded bg-white rounded">
     <div className="container-fluid py-2">
         <div className="row">
@@ -85,6 +89,7 @@ const Events = () => {
             </li>
           </ul>
         </footer>
+  </div>
   </div>
   );
 };
