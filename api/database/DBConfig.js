@@ -2,7 +2,7 @@ const mysql = require("mysql2");
 
 const config = {
   db: {
-    /* do not put password or any sensitive info here, done only for demo */
+    /* do not put password or any sensitive info here, done only for demo purposes */
     host: process.env.DB_HOST || "34.85.164.225",
     user: process.env.DB_USER || "root",
     password: process.env.DB_PASSWORD || "HooHacks2022!",
